@@ -1,0 +1,9 @@
+safe: true
+lsi: false
+exclude:
+  - bower_components
+  - _sass
+  - _coffee
+  - Gemfile
+  - Gemfile.lock
+  - .ruby-version
