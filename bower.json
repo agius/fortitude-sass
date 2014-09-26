@@ -1,0 +1,21 @@
+{
+  "name": "fortitude-sass-docs",
+  "version": "0.3.7",
+  "homepage": "https://github.com/fortitude/fortitude-sass",
+  "authors": [
+    "andrew evans <andrew.evans@hired.com>"
+  ],
+  "description": "Documentation for Fortitude-Sass",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fortitude-sass": "~0.3.7",
+    "jquery": "~2.1.1"
+  }
+}

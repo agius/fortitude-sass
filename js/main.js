@@ -3,9 +3,9 @@
 ////  Check out Rakefile for the details
 //////////////////////////////////////////////
 
+//= require jquery.js
 //= require fortitude.jquery.js
-//= require murder.coffee
 
 function name(){
-  puts 'aaron'
+  console.log('aaron');
 }
