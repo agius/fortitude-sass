@@ -1,3 +1,6 @@
 ---
 ---
-@import "bower_components/fortitude-sass/app/assets/stylesheets/fortitude.scss"
+@import "bower_components/bourbon/dist/_bourbon.scss";
+@import "bower_components/fortitude-sass/app/assets/stylesheets/fortitude.scss";
+@import "theme.scss";
+@import "extensions.scss";

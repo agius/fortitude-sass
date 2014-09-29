@@ -1,0 +1,5 @@
+.progress-bar{
+  @include fortitude-clearfix;
+  position: relative;
+  background-color: $brand-blue-light;
+}

@@ -1,0 +1,61 @@
+// Fortitude docs settings.
+$app-id:                                      fortitude;
+$base-font-family:                            'Exo 2', sans-serif;
+$base-font-size:                              $fortitude-base-font-size;
+$base-line-height:                            $fortitude-base-line-height;
+$class-breakpoints:                           (
+                                                xs: null,
+                                                sm: 768px,
+                                                md: 992px,
+                                                lg: 1200px,
+                                                xl: 1600px
+                                              );
+$breakpoints:                                 (
+                                                xs: (max-width: 767px),
+                                                sm: (min-width: 768px, max-width: 991px),
+                                                md: (min-width: 992px, max-width: 1199px),
+                                                lg: (min-width: 1200px),
+                                                xl: (min-width: 1600px)
+                                              );
+
+$base-spacing-unit:                           $fortitude-base-spacing-unit;
+
+// Fortitude Components
+$fortitude-button-height--large:              5rem;
+$fortitude-button-horizontal-padding:         1.1rem / 2;
+$fortitude-button-horizontal-padding--small:  1.1rem / 2;
+$fortitude-button-horizontal-padding--large:  1.9rem / 2;
+$fortitude-responsive-line-height-unit-total: 3;
+$fortitude-enable-badge--pill:                true;
+$fortitude-enable-button--small:              true;
+$fortitude-enable-button--large:              true;
+$fortitude-enable-button--full:               true;
+$fortitude-enable-layout--flush:              true;
+$fortitude-enable-flag--responsive:           true;
+$fortitude-enable-flag--rev:                  true;
+$fortitude-enable-media--responsive:          true;
+$fortitude-enable-media--small:               true;
+$fortitude-enable-layout--middle:             true;
+$fortitude-enable-layout--center:             true;
+
+$fortitude-flag-collapse-at:                  992px;
+$fortitude-badge-height:                      $base-spacing-unit;
+$fortitude-badge-border-width:                0;
+$fortitude-tooltip-background-color:          $brand-black;
+
+$fortitude-field-input-background-color:      $brand-white-light;
+$fortitude-field-input-border-color:          $brand-gray-light;
+$fortitude-switch-input-border-color:         $brand-gray-light;
+
+// font weights
+$light:                                       300;
+$book:                                        400;
+$medium:                                      500;
+$bold:                                        700;
+
+// Fortitude Settings (DO NOT CHANGE)
+$fortitude-app-id:                            $app-id;
+$fortitude-base-font-size:                    $base-font-size;
+$fortitude-base-line-height:                  $base-line-height;
+$fortitude-class-breakpoints:                 $class-breakpoints;
+$fortitude-breakpoints:                       $breakpoints;

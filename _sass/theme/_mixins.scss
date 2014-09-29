@@ -1,0 +1,43 @@
+@mixin bare-list {
+  @include fortitude-bare-list;
+}
+
+@mixin clearfix {
+  @include fortitude-clearfix;
+}
+
+@mixin breakpoint($alias, $breakpoints: $class-breakpoints) {
+  @include fortitude-breakpoint($alias, $breakpoints) {
+    @content;
+  }
+}
+
+@mixin breakpoint-classes($breakpoints: $class-breakpoints) {
+  @include fortitude-breakpoint-classes($breakpoints) {
+    @content;
+  }
+}
+
+@mixin font-size-alias($alias, $line-height: false) {
+  @include fortitude-font-size-alias($alias, $line-height);
+}
+
+@mixin sprite-image($name, $icons, $icons-2x: null) {
+  background-position: sprite-position($icons, $name);
+  $sprite-height: image-height(sprite-file($icons, $name));
+  width: image-width(sprite-file($icons, $name));
+  height: $sprite-height;
+
+  @if(rem-to-px($base-spacing-unit) > $sprite-height) {
+    margin-top: px-to-rem(floor(halve(rem-to-px($base-spacing-unit) - $sprite-height)));
+    margin-bottom: px-to-rem(floor(halve(rem-to-px($base-spacing-unit) - $sprite-height)));
+  }
+
+  @if $icons-2x {
+    .hidpi & {
+      $pos: sprite-position($icons-2x, $name);
+      background-position: nth($pos, 1) / 2 nth($pos, 2) / 2;
+      background-size: ceil(image-width(sprite-path($icons-2x)) / 2) auto;
+    }
+  }
+}

@@ -1,0 +1,397 @@
+@-ms-viewport {
+  width: device-width;
+}
+
+@viewport {
+  width: device-width;
+}
+
+
+html {
+  font-family: $base-font-family;
+  font-weight: $book;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: none;
+}
+
+::selection {
+  background-color: transparentize($brand-black-dark, .3);
+  color: $brand-white;
+}
+
+.hr--top {
+  border-bottom: 0.9rem solid transparent;
+  border-top: 0.1rem solid;
+}
+
+.hr--dashed {
+  border-style: dashed;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $book;
+}
+
+p {
+  a {
+    &.link {
+      text-decoration: underline;
+    }
+  }
+}
+
+strong,
+b {
+  font-weight: $medium;
+}
+
+em,
+i,
+u,
+del,
+ins,
+pre,
+s {
+  font-weight: $book;
+}
+
+small {
+  @include fortitude-font-size-alias(zeta);
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+
+  &.link {
+    color: $brand-blue;
+
+    &:hover {
+      color: $brand-blue-dark;
+    }
+
+    &--black-light {
+      color: $brand-black-light;
+
+      &:hover {
+        color: $brand-black-dark;
+      }
+    }
+
+  }
+}
+
+.highlight--quiet {
+  &:hover {
+    background-color: transparentize($brand-white-light, 0.25);
+  }
+}
+
+.background--dotted-worldmap {
+  background: {
+    image: image-url('backgrounds/dotted-worldmap.png');
+    position: top center;
+    repeat: no-repeat;
+    size: contain;
+  }
+
+  min-height: 60rem;
+
+  .hidpi & {
+    background: {
+      image: image-url('backgrounds_2x/dotted-worldmap.png');
+    }
+  }
+}
+
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak,
+.ng-hide {
+  display:none !important;
+}
+
+ng\:form { display:block; }
+
+.ng-animate-block-transitions {
+  transition: 0s all !important;
+}
+
+.a--pseudo {
+  cursor: pointer;
+}
+
+.a--ghost {
+  opacity: 0.5;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.a--icon {
+  display: inline-block;
+
+  > .icon {
+    vertical-align: top;
+  }
+}
+
+.a--muted-hover {
+  color: $brand-black;
+  
+  &:hover {
+    color: $brand-blue;
+  }
+}
+
+.fl { float: left; }
+
+.fr { float: right; }
+
+.cf { @include fortitude-clearfix; }
+
+.cb { clear: both; }
+
+.sales-auctions-controller-show-action {
+  background-color: $brand-white-light;
+}
+
+.offers-controller {
+  height: 100%;
+  body {
+    height: 100%;
+  }
+}
+
+#hired {
+  .screen-reader-visible {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  .text-break-word {
+    word-wrap: break-word;
+  }
+
+  .text-opacity25 {
+    opacity: 0.25;
+  }
+
+  .text-opacity50 {
+    opacity: 0.5;
+  }
+
+  .text-opacity75 {
+    opacity: 0.75;
+  }
+
+  .text-line-through {
+    text-decoration: line-through;
+  }
+
+  .text-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+  }
+
+  .text-black-light {
+    color: $brand-black-light;
+  }
+
+  .text-black-dark {
+    color: $brand-black-dark;
+  }
+
+  .text-gray {
+    color: $brand-gray;
+  }
+
+  .text-gray-light {
+    color: $brand-gray-light;
+  }
+
+  .text-gray-dark {
+    color: $brand-gray-dark;
+  }
+
+  .text-italic {
+    font-style: italic;
+  }
+
+  .text-white-light {
+    color: $brand-white-light;
+  }
+
+  .text-white-dark {
+    color: $brand-white-dark;
+  }
+
+  .text-cta {
+    text-transform: uppercase;
+  }
+
+  .text-uppercase {
+    text-transform: uppercase;
+  }
+
+  .text-normal {
+    text-transform: none;
+  }
+
+  .text-light {
+    font-family: $base-font-family;;
+    font-weight: $light;
+    font-style: normal;
+  }
+
+  .text-book {
+    font-family: $base-font-family;;
+    font-weight: $book;
+    font-style: normal;
+  }
+
+  .text-medium {
+    font-family: $base-font-family;;
+    font-weight: $medium;
+    font-style: normal;
+  }
+
+  .text-bold {
+    font-family: $base-font-family;;
+    font-weight: $bold;
+    font-style: normal;
+  }
+
+  .text-meta {
+    color: $brand-gray;
+  }
+
+  .text-line-through {
+    text-decoration: line-through;
+  }
+
+  .text-green {
+    color: $brand-green;
+  }
+
+  .text-pre {
+    white-space: pre-line;
+  }
+
+  .text-red {
+    color: $brand-red;
+  }
+
+  .text-orange {
+    color: $brand-orange;
+  }
+
+  del.diff {
+    color: $brand-red;
+  }
+
+  ins.diff {
+    color: $brand-green;
+  }
+
+  .content--minimal-markdown {
+    a { color: $brand-blue; }
+    p { margin-bottom: $base-spacing-unit; }
+    ul {
+      list-style-type: disc;
+      li { margin-left: $base-spacing-unit; }
+    }
+  }
+
+  .content--middle {
+    span {
+      vertical-align: middle;
+    }
+  }
+
+  .content--bottom {
+    vertical-align: bottom;
+    a {
+      vertical-align: bottom;
+    }
+  }
+
+  .content--muted {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    a,
+    strong,
+    span {
+      color: $brand-gray;
+    }
+  }
+
+  .content--white-light {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    span,
+    li {
+      color: $brand-white-light;
+    }
+  }
+
+  .content--black-dark {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    span,
+    li {
+      color: $brand-black-dark;
+    }
+  }
+
+  .is-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    user-select: none;
+  }
+}
+
+
+// this might go into fortitude.
+
+@include fortitude-breakpoint-classes {
+  $responsive-column-padding-total: 2;
+  @for $i from 0 through $responsive-column-padding-total {
+    ##{$app-id} &-prl#{$i}of#{$fortitude-responsive-column-total} {
+      padding-right: percentage($i/$fortitude-responsive-column-total);
+      padding-left: percentage($i/$fortitude-responsive-column-total);
+    }
+  }
+}

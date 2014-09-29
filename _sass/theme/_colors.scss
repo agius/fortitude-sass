@@ -1,0 +1,47 @@
+$brand-black:                         #53545B;
+$brand-black-dark:                    #36373E;
+$brand-black-light:                   #65656E;
+
+$brand-gray:                          #A4A5AD;
+$brand-gray-dark:                     #787985;
+$brand-gray-light:                    #BABBC1;
+
+$brand-white:                         #F1F2F4;
+$brand-white-dark:                    #DEE0E5;
+$brand-white-light:                   #FFFFFF;
+
+$brand-green:                         #1CB78C;
+$brand-green-dark:                    shade($brand-green, 25%);
+$brand-green-light:                   tint($brand-green, 25%);
+
+$brand-red:                           #EB4D4D;
+$brand-red-dark:                      shade($brand-red, 25%);
+$brand-red-light:                     tint($brand-red, 25%);
+
+$brand-blue:                          #4C9BDA;
+$brand-blue-dark:                     shade($brand-blue, 25%);
+$brand-blue-light:                    tint($brand-blue, 25%);
+
+$brand-orange:                        #F47D30;
+$brand-orange-dark:                   shade($brand-orange, 25%);
+$brand-orange-light:                  tint($brand-orange, 25%);
+
+$brand-yellow:                        #FBECBC;
+$brand-yellow-dark:                   #F6E6B6;
+$brand-yellow-light:                  #FEFAEE;
+
+$brand-facebook:                      #43639A;
+$brand-facebook-dark:                 shade($brand-facebook, 25%);
+$brand-facebook-light:                tint($brand-facebook, 25%);
+
+$brand-twitter:                       #63AEEB;
+$brand-twitter-dark:                  shade($brand-twitter, 25%);
+$brand-twitter-light:                 tint($brand-twitter, 25%);
+
+$base-color:                          $brand-black-dark;
+$base-background-color:               $brand-white;
+
+
+// Fortitude base colors (DO NOT CHANGE)
+$fortitude-base-color:            $base-color;
+$fortitude-base-background-color: $base-background-color;
